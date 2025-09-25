@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
             email,
             password: hashedPassword
         })
+        
 
         const savedUser = await newUser.save();
         console.log(savedUser);
